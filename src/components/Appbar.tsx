@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { HiSearch } from "react-icons/hi";
 
 export const AppBar = () => {
   const navItems = [
@@ -16,8 +17,9 @@ export const AppBar = () => {
           CCSync
         </h1>
 
-        <div className="flex items-center gap-8 text-[11px] font-medium uppercase">
-          {navItems.map((item) => (
+        <div className=" flex justify-between items-center gap-18">
+          <div className="flex items-center gap-8 text-[11px] font-medium uppercase">
+            {navItems.map((item) => (
             <NavLink
               key={item.path}
               to={item.path}
@@ -41,6 +43,8 @@ export const AppBar = () => {
               )}
             </NavLink>
           ))}
+          </div>
+          <HiSearch size={20} className="text-[#34D4FD] hover:text-[#34D4FD]/80" />
         </div>
       </div>
     </div>
