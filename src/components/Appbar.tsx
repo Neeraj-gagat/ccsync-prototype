@@ -11,11 +11,12 @@ export const AppBar = () => {
 
   return (
     <div className="w-full bg-[#091328] border-b border-white/10 fixed top-0 left-0 z-50">
-      <div className="flex justify-between items-center px-20 py-3">
+      <div className="flex justify-between items-center px-20 py-2">
         
-        <h1 className="text-white text-xl font-semibold tracking-tight">
+        {/* <h1 className="text-white text-xl font-semibold tracking-tight">
           CCSync
-        </h1>
+        </h1> */}
+        <img src="/logo.png" className="h-10" alt="logo" />
 
         <div className=" flex justify-between items-center gap-18">
           <div className="flex items-center gap-8 text-[11px] font-medium uppercase">
