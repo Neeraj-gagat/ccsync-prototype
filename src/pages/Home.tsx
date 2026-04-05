@@ -1,6 +1,6 @@
 import { AppBar } from "../components/Appbar"
 import { KanbanView } from "../components/KanbanView"
-import { dummyTasks } from "../data"
+import { dummyTasks1 } from "../data"
 import type { Task } from "../types"
 
 
@@ -16,7 +16,7 @@ export const Home = () => {
         email="demo@ccsync.com"
         encryptionSecret="demo-secret"
         UUID="demo-uuid"
-        tasks={dummyTasks}
+        tasks={dummyTasks1}
         onTaskClick={handleTaskClick}
         />
     </div>

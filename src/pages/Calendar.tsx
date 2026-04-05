@@ -1,6 +1,6 @@
 import { AppBar } from "../components/Appbar"
 import CalendarView from "../components/CalendarView"
-import { dummyTasks } from "../data"
+import { dummyTasks2 } from "../data"
 import type { Task } from "../types"
 
 
@@ -13,7 +13,7 @@ export const Calendar = () => {
     return <div className="bg-[#060E20]"> 
         <AppBar/>
         <CalendarView 
-        tasks={dummyTasks}
+        tasks={dummyTasks2}
         onTaskClick={handleTaskClick}/>
     </div>
 }

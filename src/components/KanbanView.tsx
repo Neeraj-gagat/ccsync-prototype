@@ -152,6 +152,7 @@ function TaskCard({
         opacity: isDragging ? 0.35 : 1,
         boxShadow: `0 0px 4px ${shadowColor}`,
         borderLeft: `3px solid  ${extractColorFromClass(accentClass)}`,
+        // backgroundColor: isDragging ? '#091328' : '#091328',
         // borderColor: `${shadowColor}`
       }}
       // hover:shadow-[0_10px_12px_rgba(52,212,253,0.1)]
@@ -581,7 +582,7 @@ export function KanbanView({
 
         <DragOverlay>
           {activeTask && (
-            <div className="bg-[#1e1e1e] border border-white/10 rounded-xl p-3.5 shadow-2xl opacity-95 w-72">
+            <div className="bg-[#091328] border border-[#34D4FD]/30 rounded-xl p-3.5 shadow-2xl w-62 opacity-90 scale-105">
               <p className="text-sm font-medium text-white/85">
                 {activeTask.description}
               </p>
