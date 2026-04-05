@@ -236,7 +236,7 @@ const CalendarView: React.FC<CalendarViewProps> = ({ tasks, onTaskClick }) => {
                         {dayTasks.slice(0, 3).map((task, i) => (
                           <div
                             key={i}
-                            className={`w-1 h-1 rounded-full ${getPriorityColor(task.priority)}`}
+                            className={`w-1 h-1 rounded-full  ${getPriorityColor(task.priority)} shadow-[0_0_8px_currentColor]`}
                           />
                         ))}
                         {dayTasks.length > 3 && (
