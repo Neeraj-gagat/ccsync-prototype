@@ -156,7 +156,7 @@ function TaskCard({
         // borderColor: `${shadowColor}`
       }}
       // hover:shadow-[0_10px_12px_rgba(52,212,253,0.1)]
-      className={`group bg-[#091328] border-l-2 border-white/[0.06] rounded-xl p-3.5 mb-2.5 hover:-translate-y-1 hover:bg-[#091328] transition-all duration-200 ${accentClass}`}
+      className={`group bg-[#091328] border-l-2 border-white/[0.06] rounded-xl p-3.5 mb-2.5 hover:-translate-y-1 hover:bg-[#091328] transition-all duration-300 ${accentClass}`}
       onMouseEnter={(e) => {
         e.currentTarget.style.boxShadow = `0 6px 8px ${shadowColor}`;
       }}
@@ -511,8 +511,8 @@ export function KanbanView({
               Kanban Project Board
             </h2>
           </div>
-          <p className="text-xs text-white/40 mt-1">
-            Organize tasks by project • Drag to move between columns
+          <p className="text-xs text-white/40 mt-1 flex items-center gap-1">
+            Organize tasks by project • {" "} <span className='font-bold bg-gradient-to-r from-[#34D4FD] via-cyan-300 to-blue-400 bg-clip-text text-transparent'> Drag to move </span> between columns
           </p>
         </div>
         <div className="flex gap-2 pr-10">
